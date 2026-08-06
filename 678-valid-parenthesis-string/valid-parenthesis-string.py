@@ -1,11 +1,10 @@
 class Solution:
     def checkValidString(self, s: str) -> bool:
-        high,low=0,0
+        low,high=0,0
         for ch in s:
             if ch=='(':
                 low+=1
                 high+=1
-
             elif ch==')':
                 low-=1
                 high-=1
@@ -17,10 +16,12 @@ class Solution:
             if low<0:
                 low=0
         return low==0
-                    
 
 
+        
 
             
+
+
 
         
