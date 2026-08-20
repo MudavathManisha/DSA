@@ -8,11 +8,10 @@
 from collections import deque
 class Solution:
     def zigzagLevelOrder(self, root: Optional[TreeNode]) -> List[List[int]]:
-        # def levelorder(node):
         if not root:
             return []
-        result=[]
         level=0
+        res=[]
         queue=deque([root])
         while queue:
             current=[]
@@ -26,9 +25,7 @@ class Solution:
             if level%2==1:
                 current.reverse()
             level+=1
-            result.append(current)
-        return result
+            res.append(current)
+        return res
             
-
-
-        
+            
