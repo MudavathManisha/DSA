@@ -9,10 +9,11 @@ class Solution:
         res=[]
         def preorder(node):
             if node is None:
-                return
+                return 
             res.append(node.val)
             preorder(node.left)
             preorder(node.right)
         preorder(root)
         return res
+
         
